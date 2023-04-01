@@ -1,18 +1,20 @@
 :root {
-  --cinza: #aaa;
-  --vermelha: #e93d50;
-  --vermelha-escura: #af303f;
-  --branca: #fff;
-  --luz: rgb(229, 255, 0);
+  --cinza: #44475a;
+  --vermelha: #ff79c6;
+  --vermelha-escura: #bd93f9;
+  --branca: #f8f8f2;
+  --luz: #f1fa8c;
+  --fontemonteserratsans: 'Montserrat', sans-serif;
 }
+
 
 body {
   align-items: center;
-  background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
+  background: #282a36;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fontemonteserratsans);
   min-height: 100vh;
 }
 
@@ -23,7 +25,7 @@ h1 {
 }
 
 .teclado {
-  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
   box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
   border-radius: 30px;
   display: grid;
@@ -49,7 +51,7 @@ h1 {
 .tecla.ativa,
 .tecla:active {
   background-color: var(--vermelha);
-  border: 4px solid  var(--vermelha);
+  border: 4px solid var(--vermelha);
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
   color: var(--branca);
   outline: none;
