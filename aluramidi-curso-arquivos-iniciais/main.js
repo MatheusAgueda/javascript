@@ -15,4 +15,4 @@ function tocarAudio(seletorAudio) {
     
     tecla.addEventListener('click', onTeclaClick);
   });
-     
+      
